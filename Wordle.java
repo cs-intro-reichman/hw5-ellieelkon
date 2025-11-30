@@ -130,7 +130,7 @@ public class Wordle {
                 System.out.print("Enter your guess (5-letter word): ");
                 guess = inp.readString();
                 
-                if (valid /* ... check if the guess is valid */) {
+                if (guess.length() != 5/* ... check if the guess is valid */) {
                     System.out.println("Invalid word. Please try again.");
                 } else {
                     valid = true;
